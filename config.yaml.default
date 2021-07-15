@@ -24,7 +24,7 @@ manager:
 
 log:
   # folder_path: This is the folder where your log files for plots will be saved.
-  folder_path: S:\Chia\Logs\Plotter
+  folder_path: C:\Chia\Logs\Plotter
 
 
 view:
@@ -51,7 +51,7 @@ dashboard:
   #
   # dashboard_update_url: This can be changed to point anywhere running Chia Dashboard. If using chiadashboard.com,
   #                       choose https://us.chiadashboard.com or https://eu.chiadashboard.com based on your location.
-  #       
+  #
   update_dashboard: true
   dashboard_update_url: https://us.chiadashboard.com
   dashboard_api_key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -111,10 +111,10 @@ progress:
   # phase2_weight: 20.43
   # phase3_weight: 42.29
   # phase4_weight: 3.88
-  phase1_line_end: 801
-  phase2_line_end: 834
-  phase3_line_end: 2474
-  phase4_line_end: 2620
+  phase1_line_end: 803
+  phase2_line_end: 836
+  phase3_line_end: 2476
+  phase4_line_end: 2622
   phase1_weight: 33.4
   phase2_weight: 20.43
   phase3_weight: 42.29
@@ -149,8 +149,9 @@ jobs:
   # [OPTIONAL] farmer_public_key: Your farmer public key. If none is provided, it will not pass in this variable to the
   #                               chia executable which results in your default keys being used. This is only needed if
   #                               you have chia set up on a machine that does not have your credentials.
-  # [OPTIONAL] pool_public_key: Your pool public key. Same information as the above.
-  # [OPTIONAL] pool_contract_address: Pool Contract Address (64 chars).
+  # [OPTIONAL] pool_public_key: Your pool public key. DONT Use IF YOU ARE USING A POOL CONTRACT ADDRESS! Othewise same information as above.
+  #
+  # [OPTIONAL] pool_contract_address:  Your Pool's Contract Address. Refer to https://github.com/Chia-Network/chia-blockchain/wiki/Pooling-FAQ#how-do-i-assign-portable-plots-to-a-pool
   #
   # temporary_directory: Can be a single value or a list of values. This is where the plotting will take place. If you
   #                      provide a list, it will cycle through each drive one by one.
